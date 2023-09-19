@@ -13,26 +13,19 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rotateimg{
+  transform: rotateX(360deg) rotateZ(0); 
+  animation: spin 3s linear infinite;
 }
-
-.App-link {
-  color: #61dafb;
+@keyframes spin {
+  30% {
+    transform: rotateX(30deg);
+  }
+  80% {
+    transform: rotateX(-30deg);
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.txt-shadow{
+  font-style: italic;
+  text-shadow: 1px 6px 5px rgba(125, 128, 78, 1);
 }
